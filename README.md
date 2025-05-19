@@ -1,72 +1,39 @@
-# React + Vite YouTube Clone
+# 📱 VidTube Frontend — BOOM Entertainment Assignment
 
-This project is a **YouTube Clone** built using **React** and **Vite**. The application replicates key functionalities of YouTube, focusing on user authentication, video management, and interactive features such as commenting and searching. This is the **frontend** of the application and is designed to integrate with a backend that supports JWT authentication and bcrypt.js for password hashing.
-
----
-
-## Live Link : [Click here](https://youtubecloneproj.netlify.app/)
-
-## Features
-
-- **Authentication**:
-
-  - User signup and login using JWT and bcrypt.js.
-  - Authentication state is managed using Redux Toolkit slices.
-
-- **Video Management**:
-
-  - Upload, edit, and delete videos.
-  - Filter videos based on categories.
-
-- **Channel Management**:
-
-  - Create a channel (only for authenticated users).
-  - Edit channel details.
-
-- **Comment System**:
-
-  - Add comments below videos.
-  - Edit or delete comments (restricted to comment owners).
-
-- **Navigation and Search**:
-
-  - Sidebar with quick links and categories.
-  - Search bar for video searching.
-
-- **Error Handling**:
-  - Dedicated error route page for handling 404 and other errors.
+This is the **frontend** of the short-video web app built with **React.js**. It allows users to register, log in, upload videos to the backend (which stores them on Cloudinary), and view a feed of videos streamed directly from Cloudinary.
 
 ---
 
-## Technologies Used
+## 🛠 Tech Stack
 
-- **Frontend Framework**: React
-- **Build Tool**: Vite
-- **State Management**: Redux Toolkit
-- **Styling**: Tailwind CSS
-- **Routing**: React Router
-- **Libraries**:
-  - Axios (for API requests)
-  - JWT-decode (for decoding JWT tokens)
+- React (Vite or CRA)
+- Tailwind CSS
+- Axios
+- React Router
+- JWT Authentication
+- Cloudinary Video Streaming
 
 ---
 
-## Getting Started
+## 🔥 Features
 
-### Prerequisites
+- ✅ User Signup / Login
+- ✅ JWT Auth (stored in localStorage)
+- ✅ Video Upload via backend API
+- ✅ Display feed of Cloudinary-hosted videos using `<video>` tag
+- ✅ Fully responsive design
 
-Make sure you have the following installed:
+---
 
-- [Node.js]
-- [npm]
+## ⚙️ Local Setup Instructions
 
-### run the proj
+###  Clone the Repository and Run 
 
-- npm install
-- npm run dev
+```bash
+git clone https://github.com/YourUsername/vidTube-frontend.git
+1. cd vidTube-frontend
 
-## Alert / Warning
+2. Install Dependencies
+npm install
 
-- due to use of free hosting,
-  the website can be slow to fetch data from backend,
-  please be patience :-)
+3. npm run dev
